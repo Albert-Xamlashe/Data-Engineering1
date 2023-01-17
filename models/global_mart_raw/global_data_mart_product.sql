@@ -1,3 +1,8 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
 SELECT 
         string_field_0 as Category,
         string_field_1 as ProductID,

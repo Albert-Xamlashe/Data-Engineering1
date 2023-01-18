@@ -8,7 +8,20 @@ models:
           - unique
           - not_null
           
-        
+models:
+  - name: global_data_mart_orders
+    columns: 
+      - name: OrderID
+        tests:
+          - unique
+          - not_null
+    
+
+      
+    
+
+
+     
       
 
 

@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: global_data_mart_customers
+    columns: 
+      - name: CustomerID
+        tests:
+          - unique
+          - not_null
+          
+        
+      
+
+
+
+
+
+
+

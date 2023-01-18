@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: globalmart
+    database: data-engineering-1-374714
+    schema: dbt_xamlashe1425
+    tables:
+      - name: customers
+      - name: product
+      - name: orders

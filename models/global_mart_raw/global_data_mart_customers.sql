@@ -6,7 +6,7 @@
 
 WITH selecting_rows_after_second_row as 
             (SELECT *
-                FROM `data-engineering-1-374714.dbt_xamlashe1425.customers`
+                FROM {{ source('globalmart', 'customers') }}
                 WHERE string_field_0 !='CustomerID' )
 
 SELECT string_field_0 AS   CustomerID,

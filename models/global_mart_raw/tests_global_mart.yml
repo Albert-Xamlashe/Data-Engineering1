@@ -14,8 +14,8 @@ models:
       - name: OrderID
         tests:
           - unique
-           - not_null
-      - name: ShipMode
+          - not_null
+            - name: ShipMode
         tests: 
           accepted_value:
             values:

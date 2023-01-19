@@ -9,3 +9,5 @@ group by C.CustomerName,
         C.State,
         C.CustomerID 
 Order by CustomerName
+
+

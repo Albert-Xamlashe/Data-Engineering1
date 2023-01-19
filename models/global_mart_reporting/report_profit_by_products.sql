@@ -14,4 +14,4 @@ group by P.Category,
         P.ProductID,
         P.ProductName,
         P.SubCategory
-Order by Category DESC
+Order by Category DESc

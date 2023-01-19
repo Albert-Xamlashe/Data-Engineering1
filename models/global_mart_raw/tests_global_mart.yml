@@ -14,8 +14,18 @@ models:
       - name: OrderID
         tests:
           - unique
-          - not_null
+           - not_null
+      - name: ShipMode
+        tests: 
+          accepted_value:
+            values:
+              - 'Standard Class'
+              - 'Second Class'
+              - 'First Class'
+              - 'Same Day'
+              
     
+
 
       
     

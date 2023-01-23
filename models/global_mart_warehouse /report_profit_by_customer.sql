@@ -1,3 +1,10 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
+
+
 SELECT  C.CustomerName,
         C.Country,
         C.State,
@@ -7,7 +14,9 @@ FROM {{ ref('global_mart_staging_orders') }} C
 group by C.CustomerName,
         C.Country,
         C.State,
-        C.CustomerID 
-Order by CustomerName
+        C.CustomerID ,
+         CustomerName
+ORDER BY CustomerName
+
 
 
